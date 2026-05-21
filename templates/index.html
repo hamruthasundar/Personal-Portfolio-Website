@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Hamrutha Sundar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">HS<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn-nav">Hire Me</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal"><span class="tag-dot"></span> Available for Work</div>
+      <h1 class="hero-title reveal">
+        <span class="line">Hamrutha</span>
+        <span class="line italic">Sundar</span>
+      </h1>
+      <p class="hero-sub reveal">Full-Stack Developer &amp; Creative Technologist</p>
+      <p class="hero-desc reveal">
+        I design and build digital experiences that live at the<br/>
+        intersection of <em>performance</em>, <em>aesthetics</em>, and <em>impact</em>.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-primary">View My Work <span class="arrow">→</span></a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat"><span class="stat-num" data-target="25">0</span><span>+</span><p>Projects</p></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="3">0</span><span>+</span><p>Years Exp.</p></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="12">0</span><span>+</span><p>Tech Stack</p></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal"><span>01</span> About Me</div>
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-wrap">
+            <div class="about-img-bg"></div>
+            <div class="about-initials">HS</div>
+            <div class="about-badge">🚀 Open to Roles</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-item">
+              <span class="card-label">Location</span>
+              <span class="card-val">Vellore, India 🇮🇳</span>
+            </div>
+            <div class="about-card-item">
+              <span class="card-label">Focus</span>
+              <span class="card-val">Full-Stack &amp; AI</span>
+            </div>
+            <div class="about-card-item">
+              <span class="card-label">Status</span>
+              <span class="card-val green">● Available</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h2 class="section-title">Crafting <em>digital</em><br/>experiences that matter</h2>
+          <p>I'm a full-stack developer with a passion for building products that are not just functional, but delightful. I bridge the gap between design and engineering — turning complex problems into clean, elegant solutions.</p>
+          <p>When I'm not coding, I'm exploring new frameworks, contributing to open source, or obsessing over micro-interactions that make users smile.</p>
+          <div class="about-tags">
+            <span class="tag">Problem Solver</span>
+            <span class="tag">Clean Code Advocate</span>
+            <span class="tag">Lifelong Learner</span>
+            <span class="tag">Building Real Products 🛠️</span>
+          </div>
+          <a href="https://1drv.ms/b/c/cf4397bb4308c10a/IQAvwmMsMP72Q7DN5nxgdZURASI5Rj2cXzMFVISrFhsrZ3A?e=U6z58w" target="_blank" class="btn-outline" id="downloadCV">Download CV <span>↓</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal"><span>02</span> Tech Stack</div>
+      <h2 class="section-title reveal">Tools I <em>master</em></h2>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <div class="skill-group-title">Frontend</div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="90"><div class="skill-icon">⚛️</div><span>React.js</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-item" data-level="85"><div class="skill-icon">🌐</div><span>HTML / CSS</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-item" data-level="80"><div class="skill-icon">🟨</div><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-item" data-level="75"><div class="skill-icon">☕</div><span>Java</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Backend</div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="88"><div class="skill-icon">🐍</div><span>Python</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+            <div class="skill-item" data-level="82"><div class="skill-icon">🌶️</div><span>Flask</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+            <div class="skill-item" data-level="75"><div class="skill-icon">🟢</div><span>Node.js</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+            <div class="skill-item" data-level="72"><div class="skill-icon">⚙️</div><span>C / C++</span><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Data &amp; Cloud</div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="85"><div class="skill-icon">🍃</div><span>MongoDB</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-item" data-level="80"><div class="skill-icon">🗄️</div><span>SQLite</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-item" data-level="72"><div class="skill-icon">☁️</div><span>AWS</span><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></div>
+            <div class="skill-item" data-level="75"><div class="skill-icon">🔥</div><span>Firebase</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section section" id="projects">
+    <div class="container">
+      <div class="section-label reveal"><span>03</span> Projects</div>
+      <div class="projects-header reveal">
+        <h2 class="section-title">Things I've <em>built</em></h2>
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="AI/ML">AI / ML</button>
+          <button class="filter-btn" data-filter="MERN">MERN</button>
+          <button class="filter-btn" data-filter="Flask">Flask</button>
+        </div>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Injected by JS -->
+        <div class="projects-loading">
+          <div class="loader"></div>
+          <p>Loading projects…</p>
+        </div>
+      </div>
+      <!-- ADD PROJECT MODAL TRIGGER -->
+      <div class="add-project-wrap reveal">
+        <button class="btn-add" id="addProjectBtn">+ Add New Project</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADD PROJECT MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="projectModal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <h3 class="modal-title">Add a New Project</h3>
+      <div class="form-grid">
+        <div class="form-group full">
+          <label>Project Title *</label>
+          <input type="text" id="pTitle" placeholder="My Awesome Project" />
+        </div>
+        <div class="form-group full">
+          <label>Description *</label>
+          <textarea id="pDesc" placeholder="What does it do? What problem does it solve?" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Tech Stack (comma-separated) *</label>
+          <input type="text" id="pTech" placeholder="React, Flask, MongoDB" />
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <select id="pCategory">
+            <option>AI/ML</option>
+            <option>MERN</option>
+            <option>Flask</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>GitHub URL</label>
+          <input type="url" id="pGithub" placeholder="https://github.com/..." />
+        </div>
+        <div class="form-group">
+          <label>Live URL</label>
+          <input type="url" id="pLive" placeholder="https://..." />
+        </div>
+        <div class="form-group full">
+          <label class="checkbox-label">
+            <input type="checkbox" id="pFeatured" />
+            <span>Mark as Featured</span>
+          </label>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-ghost" id="cancelBtn">Cancel</button>
+        <button class="btn-primary" id="saveProjectBtn">Save Project</button>
+      </div>
+      <div class="form-msg" id="formMsg"></div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="section-label reveal"><span>04</span> Contact</div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <h2 class="section-title">Let's build<br/><em>something great</em></h2>
+          <p class="contact-sub">Have a project in mind? Looking for a developer? Or just want to say hi? My inbox is always open.</p>
+          <div class="contact-links">
+            <a href="mailto:hamruthasundar247@gmail.com" class="contact-link">
+              <span class="link-icon">✉️</span>
+              <div><span class="link-label">Email</span><span class="link-val">hamruthasundar247@gmail.com</span></div>
+            </a>
+            <a href="https://github.com" target="_blank" class="contact-link">
+              <span class="link-icon">🐙</span>
+              <div><span class="link-label">GitHub</span><span class="link-val">github.com/hamruthasundar</span></div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-link">
+              <span class="link-icon">💼</span>
+              <div><span class="link-label">LinkedIn</span><span class="link-val">linkedin.com/in/hamruthasundar</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" id="cName" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" id="cEmail" placeholder="jane@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" id="cSubject" placeholder="Project Inquiry" />
+            </div>
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea id="cMessage" rows="5" placeholder="Tell me about your project…" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-btn">Send Message <span class="arrow">→</span></button>
+            <div class="contact-msg" id="contactMsg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">HS<span class="dot">.</span></div>
+        <p class="footer-copy">Designed &amp; Built by Hamrutha Sundar · <span id="year"></span></p>
+        <div class="footer-socials">
+          <a href="https://github.com" target="_blank">GH</a>
+          <a href="https://linkedin.com" target="_blank">LI</a>
+          <a href="https://twitter.com" target="_blank">TW</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

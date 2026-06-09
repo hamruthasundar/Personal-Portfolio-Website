@@ -10,17 +10,6 @@ A responsive and modern personal portfolio website built using **Flask (Python)*
 - 🗂 Jinja2 Templates
 - 📁 Flask Static File Handling
 
-📁 Project Structure
-portfolio/
-├── app.py
-├── requirements.txt
-├── templates/
-│ └── index.html
-├── static/
-│ ├── css/
-│ │ └── style.css
-│ └── js/
-│ └── main.js
 
 ✨ Features
 
